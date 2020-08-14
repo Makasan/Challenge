@@ -22,7 +22,7 @@ int main()
 	{
 		for (int i = start; i <= end; i++)
 		{
-			printf("%d \n", i);
+			printf("%d ", i);
 			SD += ((i - average) * (i - average));
 		}
 	}
@@ -30,7 +30,7 @@ int main()
 	{
 		for (int i = start; i >= end; i--)
 		{
-			printf("%d \n", i);
+			printf("%d ", i);
 			SD += ((i - average) * (i - average));
 
 		}
@@ -42,7 +42,7 @@ int main()
 		return 0;
 	}
 	SD = sqrt(SD / (abs(start - end)));
-	printf("Average = %.2f\n", average);
+	printf("\nAverage = %.2f\n", average);
 	printf("S.D. = %.2f", SD);
 	return 0;
 }
